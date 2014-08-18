@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.8"
+ >
+    
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="9.8"
+    android:background="#33eeeeee"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="2dp"
+        android:layout_height="210dp"
+        android:layout_below="@+id/activity_main_daytime"
+        android:layout_centerHorizontal="true"
+        android:background="#bbbbbb" />
+
+    <TextView
+        android:id="@+id/activity_main_hour_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/hour_cecle"
+        android:gravity="center"
+        android:text="时"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/activity_main_min_text"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/activity_main_hour_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/hour_cecle"
+        android:gravity="center"
+        android:text="分"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/activity_main_miao_text"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/activity_main_min_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/hour_cecle"
+        android:gravity="center"
+        android:text="秒"
+        android:textColor="@android:color/background_light"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/activity_main_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_yearandmoonth_text"
+        android:layout_below="@+id/activity_main_yearandmoonth_text"
+        android:background="#33b5e5"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="12"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/activity_main_daytime"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textview_backgourd"
+        android:gravity="center"
+        android:text="112"
+        android:textColor="#ffffff"
+        android:textSize="75sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/activity_main_jiyu"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/activity_main_miao_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/hour_cecle"
+        android:gravity="center"
+        android:text="···"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/activity_main_yearandmoonth_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/activity_main_daytime"
+        android:layout_marginTop="13dp"
+        android:background="#0099cc"
+        android:padding="6dp"
+        android:text="Aug,2014"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/activity_main_hour_number"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignBaseline="@+id/activity_main_hour_text"
+        android:layout_alignBottom="@+id/activity_main_hour_text"
+        android:layout_toLeftOf="@+id/activity_mian_hour_line"
+        android:background="#0099cc"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="18sp"
+        android:textColor="#ffffff" />
+
+    <View
+        android:id="@+id/activity_mian_hour_line"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/activity_main_hour_number"
+        android:layout_marginTop="11dp"
+        android:layout_toLeftOf="@+id/activity_main_hour_text"
+        android:background="#bbbbbb" />
+
+    <View
+        android:id="@+id/activity_main_min_line"
+        android:layout_width="60dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/acitvity_main_min_number"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/activity_main_min_text"
+        android:background="#bbbbbb" />
+
+    <TextView
+        android:id="@+id/acitvity_main_min_number"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/activity_main_miao_text"
+        android:layout_toRightOf="@+id/activity_main_min_line"
+        android:background="#0099cc"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:id="@+id/activity_main_miao_number"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@+id/activity_main_miao_text"
+        android:layout_alignBottom="@+id/activity_main_miao_text"
+        android:layout_toLeftOf="@+id/activity_main_miao_line"
+        android:background="#0099cc"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/activity_main_miao_line"
+        android:layout_width="40dp"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/activity_main_miao_number"
+        android:layout_marginTop="11dp"
+        android:layout_toLeftOf="@+id/activity_main_miao_text"
+        android:background="#bbbbbb" />
+
+    
+    
+    <TextView
+        android:id="@+id/activity_main_jiyu_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:background="#33b5e5"
+        android:padding="3dp"
+        android:text="一个人身边的位置只有那么多"
+        android:textColor="@android:color/background_light" />
+</RelativeLayout>
+
+</LinearLayout>

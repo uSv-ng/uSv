@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goalLayoutId"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/zaoqititle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#1874CD" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="39dp"
+            android:text="学习目标"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/setmengxiang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/sort_in_lobby"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/textView5"
+            android:background="@drawable/top_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/zaoqititle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="36dp"
+        android:text="我的梦想从每天的"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#6e6e6e" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="30dp"
+        android:text="6:00"
+        android:textColor="#33b5e5"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="67dp"
+        android:text="开始"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#6e6e6e" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="78dp"
+        android:text="我的梦想是"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#6e6e6e" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/tv"
+        android:textOff=""
+        android:background="@drawable/button_switch"
+        android:textOn="" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggleButton1"
+        android:layout_alignBottom="@+id/toggleButton1"
+        android:layout_alignLeft="@+id/textView4"
+        android:textSize="18sp"
+        android:text="励志锁屏" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv"
+        android:layout_below="@+id/textView3"
+        android:text=" your dream"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#33b5e5"
+        android:textSize="40sp" />
+
+</RelativeLayout>

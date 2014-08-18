@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8">
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.8"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp" >
+
+      <TextView
+          android:id="@+id/jianchi_textview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:text="坚持梦想"
+          android:textSize="30sp"
+          android:textColor="#6e6e6e" />
+      
+      <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="500dp"
+          android:layout_below="@+id/jianchi_textview"
+          android:orientation="vertical">
+          
+          <RelativeLayout 
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="2">
+
+              <TextView
+                  android:id="@+id/jianchi_date"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentTop="true"
+                  android:layout_centerHorizontal="true"
+                  android:text="1"
+                  android:textStyle="bold"
+                  android:textColor="#0099cc"
+                  android:textSize="140sp" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignBaseline="@+id/jianchi_date"
+                  android:layout_alignBottom="@+id/jianchi_date"
+                  android:layout_toRightOf="@+id/jianchi_date"
+                  android:text="天"
+                  android:textSize="22sp"
+                  android:textColor="#aaaaaa" />
+              
+          </RelativeLayout>
+          
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="3" >
+
+              <TextView
+                  android:id="@+id/textView3"
+                  android:layout_width="match_parent"
+                  android:layout_height="2dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:background="#cccccc" />
+
+              <TextView
+                  android:id="@+id/textView1"
+                  android:layout_width="2dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentTop="true"
+                  android:layout_centerHorizontal="true"
+                  android:background="#cccccc" />
+
+              <RelativeLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_above="@id/textView3"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_toLeftOf="@+id/textView1" >
+
+                  <TextView
+                      android:id="@+id/wanchen_task"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_centerHorizontal="true"
+                      android:text="完成任务"
+                      android:textColor="#6e6e6e"
+                      android:textSize="30sp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignBaseline="@+id/fnish_task_number"
+                      android:layout_alignBottom="@+id/fnish_task_number"
+                      android:layout_toRightOf="@+id/fnish_task_number"
+                      android:text="个"
+                      android:textSize="22sp"
+                      android:textColor="#aaaaaa" />
+
+                  <TextView
+                      android:id="@+id/fnish_task_number"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/wanchen_task"
+                      android:layout_centerHorizontal="true"
+                      android:text="0"
+                      android:textColor="#0099cc"
+                      android:textSize="45sp" />
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:id="@+id/relativeLayout1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignBottom="@+id/textView3"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_toRightOf="@+id/textView1" >
+
+                  <TextView
+                      android:id="@+id/zhangwo_danci"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_centerHorizontal="true"
+                      android:text="掌握单词"
+                      android:textColor="#6e6e6e"
+                      android:textSize="30sp" />
+
+                  <TextView
+                      android:id="@+id/fnish_word"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/zhangwo_danci"
+                      android:layout_centerHorizontal="true"
+                      android:text="0"
+                      android:textColor="#0099cc"
+                      android:textSize="45sp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignBaseline="@+id/fnish_word"
+                      android:layout_alignBottom="@+id/fnish_word"
+                      android:layout_toRightOf="@+id/fnish_word"
+                      android:text="个"
+                       android:textSize="22sp"
+                      android:textColor="#aaaaaa" />
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:id="@+id/relativeLayout2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentLeft="true"
+                  android:layout_below="@+id/textView3"
+                  android:layout_toLeftOf="@+id/relativeLayout1" >
+
+                  <TextView
+                      android:id="@+id/fnish_gushi"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/zhangwo_gushi"
+                      android:layout_centerHorizontal="true"
+                      android:text="0"
+                      android:textColor="#0099cc"
+                      android:textSize="45sp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignBaseline="@+id/fnish_gushi"
+                      android:layout_alignBottom="@+id/fnish_gushi"
+                      android:layout_toRightOf="@+id/fnish_gushi"
+                      android:text="句"
+                       android:textSize="22sp"
+                      android:textColor="#aaaaaa" />
+
+                  <TextView
+                      android:id="@+id/zhangwo_gushi"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginTop="14dp"
+                      android:text="掌握古诗"
+                      android:textColor="#6e6e6e"
+                      android:textSize="30sp" />
+
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@+id/relativeLayout1"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignTop="@+id/relativeLayout2" >
+
+                  <TextView
+                      android:id="@+id/fnish_duihua"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/zhangwo_duihua"
+                      android:layout_centerHorizontal="true"
+                      android:text="0"
+                      android:textColor="#0099cc"
+                      android:textSize="45sp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignBaseline="@+id/fnish_duihua"
+                      android:layout_alignBottom="@+id/fnish_duihua"
+                      android:layout_toRightOf="@+id/fnish_duihua"
+                      android:text="句"
+                       android:textSize="22sp"
+                      android:textColor="#aaaaaa" />
+
+                  <TextView
+                      android:id="@+id/zhangwo_duihua"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginTop="14dp"
+                      android:text="掌握对话"
+                      android:textColor="#6e6e6e"
+                      android:textSize="30sp" />
+
+              </RelativeLayout>
+          </RelativeLayout>
+           
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1" 
+              android:paddingTop="6dp">
+
+              <TextView
+                  android:id="@+id/chaoguodetongxue"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:textSize="22sp"
+                  android:text="通过你的坚持和努力，已经超过5%的同学"
+                  android:textColor="#6e6e6e" />
+
+          </RelativeLayout>
+          
+      </LinearLayout>
+      
+
+    </RelativeLayout>
+    
+    
+    
+    
+    
+  </LinearLayout>
+

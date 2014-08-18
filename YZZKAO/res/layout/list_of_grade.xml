@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33b5e5" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0099cc" >
+
+            <TextView
+                android:id="@+id/nameTextId"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="2014年第一次8校模拟考试"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/rankingTextId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@+id/list_of_grade_text_ninaji"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/list_of_grade_text_ninaji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/scoreTextId"
+                android:text="年排:"
+                android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/list_of_grade_zongfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/scoreTextId"
+            android:layout_alignParentLeft="true"
+            android:text="总分:"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/list_of_grade_number_banji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/list_of_grade_text_banji"
+            android:layout_alignBottom="@+id/list_of_grade_text_banji"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/list_of_grade_text_ninaji"
+            android:text="10"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/list_of_grade_text_banji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="班排:"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/scoreTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="750"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/list_of_grade_text_yuwen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/list_of_grade_text_shuxue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="110"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/list_of_grade_text_yingyu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="105"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/list_of_grade_text_lizong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="84"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/list_of_grade_text_wenzong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="87"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+</LinearLayout>

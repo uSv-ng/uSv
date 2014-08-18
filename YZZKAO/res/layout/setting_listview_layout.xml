@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="#ffffff" >
+    
+    <ImageView 
+        android:id="@+id/settingListViewImage1Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/word50"
+        
+        />
+    <View 
+        android:layout_height="20dp"
+        android:layout_width="9dp"/>
+    
+    <TextView 
+        android:id="@+id/settingListViewTextId"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+		android:gravity="left|bottom"
+        android:textColor="#6E6E6E"
+        android:textSize="17sp"
+        android:text="英语单词"
+        />
+    <ImageView
+        android:id="@+id/settingListViewImage2Id"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        />
+        
+    
+
+</LinearLayout>

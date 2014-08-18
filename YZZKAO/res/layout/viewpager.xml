@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffff"
+    >
+    
+     <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    
+     <RelativeLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#1874CD" 
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/setDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/widget_setup"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="39dp"
+            android:gravity="center"
+            android:text="赢在中考"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+    
+     <LinearLayout 
+         android:id="@+id/biaoqian"
+         android:layout_width="match_parent"
+         android:layout_height="38dp"
+         android:orientation="horizontal"
+         android:background="#dddddd"
+         android:padding="3dp"
+         android:layout_below="@id/titlelayout">
+		
+         <RelativeLayout 
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             >
+
+             <Button
+                 android:id="@+id/qingchuntext"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_centerVertical="true"
+                 android:text="青春"
+                 android:background="#dddddd"
+                 android:textColor="#33b5e5"
+                 android:textSize="16sp" />
+             
+         </RelativeLayout>
+         
+            <RelativeLayout 
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             >
+
+          <Button
+              android:id="@+id/daojishitext"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:text="倒计时"
+              android:padding="3dp"
+              android:background="#dddddd"
+              android:textColor="#6E6E6E"
+              android:textSize="16sp" />
+          
+           </RelativeLayout>
+           
+            
+            
+           
+              <RelativeLayout 
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             >
+            <Button
+               android:id="@+id/jilu"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               android:background="#dddddd"
+               android:gravity="center"
+               android:text="记录"
+               android:padding="3dp"
+               android:textColor="#6E6E6E"
+               android:textSize="16sp" />
+                      
+              </RelativeLayout>
+              
+                  
+           
+              <RelativeLayout 
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             >
+
+           <Button
+               android:id="@+id/xuexitext"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               android:background="#dddddd"
+               android:gravity="center"
+               android:text="学习"
+               android:padding="3dp"
+               android:textColor="#6E6E6E"
+               android:textSize="16sp" />
+           
+           
+           </RelativeLayout>
+           
+     </LinearLayout>
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="2dp"
+         android:orientation="horizontal"
+         android:layout_below="@id/biaoqian">
+         
+         <TextView 
+             android:id="@+id/henggang0"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="#33b5e5"
+             />
+          <TextView 
+             android:id="@+id/henggang1"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             />
+           <TextView 
+             android:id="@+id/henggang2"  
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             />
+         
+            <TextView 
+             android:id="@+id/henggang3"  
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             />
+     </LinearLayout>
+	
+    
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/settingLayoutId"
+   
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+       >
+    </RelativeLayout>
+    
+    
+    
+    
+     <ScrollView  
+        android:layout_width="fill_parent"  
+        android:layout_height="0dp" 
+        android:layout_weight="9.8"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/umeng_socialize_comment_bg">
+    
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#ffffff"
+      android:orientation="vertical"
+      android:padding="15dp" >
+
+      <ListView
+          android:id="@+id/settingListViewId_0"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:divider="#cccccc"
+          android:dividerHeight="1.4px"
+          android:footerDividersEnabled="false"
+          android:padding="10dp" >
+      </ListView>
+
+      <ListView
+          android:id="@+id/settingListViewId_1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/settingListViewId_0"
+          android:layout_gravity="center"
+          android:layout_marginTop="25dp"
+          android:divider="#cccccc"
+          android:dividerHeight="1.3px"
+          android:footerDividersEnabled="false"
+          android:padding="10dp"
+          android:scrollbars="none" >
+      </ListView>
+
+      <ListView
+          android:id="@+id/settingListViewId_2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/settingListViewId_1"
+          android:layout_marginTop="25dp"
+          android:divider="#cccccc"
+          android:dividerHeight="1px"
+          android:footerDividersEnabled="false"
+          android:padding="10dp"
+          android:scrollbars="none" >
+      </ListView>
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="match_parent"
+          android:layout_height="2px"
+          android:layout_alignLeft="@+id/settingListViewId_0"
+          android:layout_alignTop="@+id/settingListViewId_0"
+          android:background="#0099cc" />
+
+      <TextView
+          android:id="@+id/diertiaoxian"
+          android:layout_width="match_parent"
+          android:layout_height="2px"
+          android:layout_alignLeft="@+id/settingListViewId_1"
+          android:layout_alignTop="@+id/settingListViewId_1"
+          android:background="#0099cc" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@id/diertiaoxian"
+          android:paddingLeft="15dp"
+          android:text="梦想"
+          android:textColor="#0099cc"
+          android:textSize="20sp" />
+
+      <TextView
+          android:id="@+id/disantiaoxian"
+          android:layout_width="match_parent"
+          android:layout_height="2px"
+          android:layout_alignLeft="@+id/settingListViewId_2"
+          android:layout_alignTop="@+id/settingListViewId_2"
+          android:background="#0099cc" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@id/disantiaoxian"
+          android:paddingLeft="15dp"
+          android:text="关于"
+          android:textColor="#0099cc"
+          android:textSize="20sp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/textView1"
+          android:layout_alignLeft="@+id/settingListViewId_0"
+          android:paddingLeft="15dp"
+          android:text="计划"
+          android:textColor="#0099cc"
+          android:textSize="20sp" />
+  </RelativeLayout>
+  
+  </ScrollView>
+</LinearLayout>

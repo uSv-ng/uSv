@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goalLayoutId"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/zaoqititle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#1874CD" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="39dp"
+            android:text="好友分享"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/share_back"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/textView5"
+            android:background="@drawable/top_back" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/shareToFriend"
+        android:layout_marginTop="14dp"
+        android:background="#cccccc" />
+
+    <Button
+        android:id="@+id/shareToQzone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shareToFriend"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="分享到QQ空间"
+        android:textColor="#6e6e6e"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/shareToFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zaoqititle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="分享到QQ好友"
+        android:textColor="#6e6e6e"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shareToFriend"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@+id/shareToFriend"
+        android:src="@drawable/icon_share_sns_qq" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shareToQzone"
+        android:layout_alignLeft="@+id/imageView1"
+        android:src="@drawable/icon_share_sns_qzone" />
+
+</RelativeLayout>

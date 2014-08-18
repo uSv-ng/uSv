@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/qzone_bg_copy"
+    android:orientation="horizontal">
+    
+<Button
+    android:id="@+id/xiugai"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:text="修改"
+    android:paddingLeft="5dp"
+    android:textColor="#ffffff"
+    android:textSize="14sp" />
+
+
+<Button
+    android:id="@+id/finish"
+     android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:text="删除"
+    android:paddingRight="5dp"
+    android:textColor="#ffffff"
+    android:textSize="14sp" />
+
+</LinearLayout>
